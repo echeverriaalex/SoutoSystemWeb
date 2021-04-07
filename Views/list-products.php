@@ -23,12 +23,12 @@
                             <td> <?php echo $product->getStock(); ?>  </td>
                             <td>
                                 <form method="POST" action="<?php echo FRONT_ROOT?>Products/Delete">
-                                    <input type="hidden" name="prodcutDescription" value="<?php echo $product->getDescription();?>">
+                                    <input type="hidden" name="productDescription" value="<?php echo $product->getDescription();?>">
                                     <button type="submit"> Borrar </button>
                                 </form>
                                 
-                                <form method="POST", action="<?php echo FRONT_ROOT?>Products/Edit">
-                                
+                                <form method="POST", action="<?php echo FRONT_ROOT?>Products/ShowEditView">
+                                    <input type="hidden" name="productDescription" value="<?php echo $product->getDescription();?>">
                                     <button type="submit"> Editar </button>
                                 </form>                           
                             </td>

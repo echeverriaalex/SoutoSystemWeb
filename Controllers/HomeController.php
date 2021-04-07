@@ -6,9 +6,12 @@
 
         public function Index($message = ""){
 
+            require_once(VIEWS_PATH."nav.php");
+
             $productsController = new ProductsController();
-            //$productsController->ShowListView();
-            $productsController->ShowAddView();
+            $productsController->ShowListView();
+            //$productsController->ShowAddView();
+            //$productsController->ShowEditView();
 
             $storeController = new StoreController();
             //$storeController->ShowAddView();

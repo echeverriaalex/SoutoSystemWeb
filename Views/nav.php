@@ -9,13 +9,9 @@
 
 
 
-        <ul>
-            <li>
-                <a>
-                
-
-            </li>
-            <li> Sucursales </li>
+        <ul>       
+            <li> <a href="<?php echo FRONT_ROOT?>Products/ShowListView"> Listar Productos</a> Sucursales </li>
+            
         </ul>
     </nav>
 </div>
